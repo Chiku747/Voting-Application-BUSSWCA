@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/output.css">
+    <title>SignUp/login</title>
+</head>
+<body>
+    <h2 class="text-center text-lg my-10">SignUp</h2>
+    <form action="/signup" class="flex flex-col items-center w-72 m-auto gap-2" method="post">
+        <input class="outline-none bg-transparent border-2 border-slate-700 w-72 p-2" type="text" name="name" placeholder="Name">
+        <input class="outline-none bg-transparent border-2 border-slate-700 w-72 p-2" type="text" name="email" placeholder="Email" id="">
+        <input class="outline-none bg-transparent border-2 border-slate-700  w-72 p-2" type="number" name="phone" placeholder="Mobile" id="">
+        <input class="outline-none bg-transparent border-2 border-slate-700 w-72 p-2" type="password" name="password" placeholder="Password" id="">
+        <input class="bg-green-600 p-2 rounded-md w-24 text-white" type="submit" value="SignUp" >
+    </form>
+    <h2 class="text-center text-lg my-10">Login</h2>
+    <form action="/login" class="flex flex-col items-center w-72 m-auto gap-2 my-10" method="post">
+        <!-- <input class="bg-transparent border-2 w-72 p-2" type="text" name="name" placeholder="Name"> -->
+        <input class="bg-transparent border-2 w-72 border-slate-800 p-2" type="text" name="email" placeholder="Email" id="">
+        <!-- <input class="bg-transparent border-2 w-72 p-2" type="number" name="" placeholder="Mobile" id=""> -->
+        <input class="bg-transparent border-2 w-72 border-slate-800 p-2" type="password" name="password" placeholder="Password" id="">
+        <input class="bg-blue-600 p-2 rounded-md w-24 text-white" type="submit" value="Login" >
+    </form>
+    <h2 class="text-center">Admin Login</h2>
+    <form action="/admin/adminLogin" class="flex flex-col items-center w-72 m-auto gap-2" method="post">
+        <!-- <input class="bg-transparent border-2 w-72 p-2" type="text" name="name" placeholder="Name"> -->
+        <input class="bg-transparent border-2 w-72 border-slate-800 p-2" type="text" name="email" placeholder="Email" id="">
+        <!-- <input class="bg-transparent border-2 w-72 p-2" type="number" name="" placeholder="Mobile" id=""> -->
+        <input class="bg-transparent border-2 w-72 border-slate-800 p-2" type="password" name="password" placeholder="Password" id="">
+        <input class="bg-blue-600 p-2 rounded-md w-24 text-white" type="submit" value="Login" >
+    </form>
+</body>
+</html>

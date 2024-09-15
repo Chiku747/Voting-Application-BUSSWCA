@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/output.css">
+    <title>Admin Panel</title>
+</head>
+
+<body>
+    <p>
+        <%= admin.email %>
+    </p>
+    <h1 class="text-2xl text-center">BUSSCWA</h1>
+    <div id="main" class="w-full h-auto  items-center justify-center">
+        <div class="w-80 min-h-auto  m-auto text-lg text-center rounded-md bg-yellow-500">
+            <p>List of Candidates</p>
+            <div class="w-auto h-full overflow-scroll">
+                <% candidate.forEach(element => { %>
+                    <div class="bg-white flex items-center justify-between rounded-md m-4 gap-5">
+                        <div class=" m-1 bg-blue-400 rounded-full h-16 w-16"></div>
+                        <p class="text-xl"><%=  element.name %></p>
+                        <div class="p-2 flex flex-col gap-2">
+                            <div class="bg-purple-500 text-white text-sm w-12 h-auto rounded-md">
+                                Edit
+                            </div>
+                            <div class="bg-red-500 text-white text-sm w-18 p-1 h-auto rounded-md">
+                                Remove
+                            </div>
+                        </div>
+                    </div>
+                 
+                <% }) %>
+   
+                <!-- <div class="bg-white flex items-center justify-between rounded-md m-4 gap-5">
+                    <div class=" m-1 bg-blue-400 rounded-full h-16 w-16"></div>
+                    <p class="text-xl">Taras Besra</p>
+                    <div class="p-2 flex flex-col gap-2">
+                        <div class="bg-purple-500 text-white text-sm w-12 h-auto rounded-md">
+                            Edit
+                        </div>
+                        <div class="bg-red-500 text-white text-sm w-18 p-1 h-auto rounded-md">
+                            Remove
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white flex items-center justify-between rounded-md m-4 gap-5">
+                    <div class=" m-1 bg-blue-400 rounded-full h-16 w-16"></div>
+                    <p class="text-xl">Taras Besra</p>
+                    <div class="p-2 flex flex-col gap-2">
+                        <div class="bg-purple-500 text-white text-sm w-12 h-auto rounded-md">
+                            Edit
+                        </div>
+                        <div class="bg-red-500 text-white text-sm w-18 p-1 h-auto rounded-md">
+                            Remove
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white flex items-center justify-between rounded-md m-4 gap-5">
+                    <div class=" m-1 bg-blue-400 rounded-full h-16 w-16"></div>
+                    <p class="text-xl">Taras Besra</p>
+                    <div class="p-2 flex flex-col gap-2">
+                        <div class="bg-purple-500 text-white text-sm w-12 h-auto rounded-md">
+                            Edit
+                        </div>
+                        <div class="bg-red-500 text-white text-sm w-18 p-1 h-auto rounded-md">
+                            Remove
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white flex items-center justify-between rounded-md m-4 gap-5">
+                    <div class=" m-1 bg-blue-400 rounded-full h-16 w-16"></div>
+                    <p class="text-xl">Taras Besra</p>
+                    <div class="p-2 flex flex-col gap-2">
+                        <div class="bg-purple-500 text-white text-sm w-12 h-auto rounded-md">
+                            Edit
+                        </div>
+                        <div class="bg-red-500 text-white text-sm w-18 p-1 h-auto rounded-md">
+                            Remove
+                        </div>
+                    </div>
+                </div> -->
+
+            </div>
+        </div>
+        <button class="w-24 my-10 ml-10 h-8 bg-green-700 px-2 py-1 rounded-md text-white">Add New</button>
+        <div class="w-72 h-72 row-span-5 rounded-md  flex items-center justify-center text-white bg-blue-500">
+            <div>
+                <p class="text-3xl">Total Votes Casted</p>
+                <p class="text-center text-3xl">110</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

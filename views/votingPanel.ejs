@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/output.css">
+    <title>Voting Panel</title>
+</head>
+
+<body>
+    <h1 class="text-3xl text-center">BUSSCWA</h1>
+    <div>
+        <p>
+            <%= user.name %>
+        </p>
+    </div>
+    <div class="bg-yellow-600 min-h-96 w-auto rounded-sm p-2 m-4 mt-16">
+        <% candidate.forEach(element=>{ %>
+            <div class="bg-white flex items-center justify-evenly rounded-md m-4 gap-5">
+                <div class=" m-1 bg-blue-400 rounded-full h-10 w-10"></div>
+                <p class="text-xl">
+                    <%= element.name %>
+                </p>
+                <a  href="/<%= element._id %>" class="bg-blue-500 w-10 h-10 p-1 rounded-sm text-white cursor-pointer">Vote</a>
+                    <div class="bg-green-300 w-10 h-10 rounded-sm p-1 text-center"><%= element.votes.length %></div>
+            </div>
+
+            <% }) %>
+    </div>
+</body>
+
+</html>

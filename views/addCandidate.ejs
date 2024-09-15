@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/output.css">
+    <title>Admin Panel</title>
+</head>
+<body>
+    <h2 class="text-center text-lg mb-10">Add new Candiate</h2>
+    <form class="flex flex-col gap-8 items-center justify-center" action="/admin/addnewcandidate" method="post" >
+        <input class="outline-none border-2 p-1 border-slate-800" type="text" name="name" placeholder="Name" id="">
+        <!-- <input type="file" name="photo" id=""> -->
+        <input class=" w-20 bg-green-700 text-white p-1 rounded-sm" type="submit" value="Add">
+    </form>
+</body>
+</html>

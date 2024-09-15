@@ -4,7 +4,7 @@ const path = require("path");
 const cookieParser = require("cookie-parser");
 const userRoute = require("./routes/userRoutes");
 const adminRoute = require("./routes/adminRoutes");
-
+const PORT = process.env.PORT || 4000
 
 
 app.use(express.urlencoded({ extended: true  }));
